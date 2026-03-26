@@ -22,7 +22,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 # Settings
-%matplotlib inline
+matplotlib inline
 plt.style.use('seaborn-v0_8-whitegrid')
 sns.set_palette("viridis")
 
