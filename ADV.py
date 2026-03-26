@@ -1,6 +1,7 @@
 # Auto-generated Python script from Jupyter Notebook
 
 # Core libraries
+import streamlit as st
 import pandas as pd
 import numpy as np
 
@@ -177,3 +178,8 @@ future_years = np.arange(ts.index.year.max()+1, ts.index.year.max()+11).reshape(
 future_temp = lr.predict(future_years)
 print("Forecast:", future_temp)
 
+
+st.title("Global Climate Change Dashboard")
+df = pd.read_csv("GlobalLandTemperaturesByCountry.csv")
+# ... analysis and interactive widgets
+st.plotly_chart(fig)
